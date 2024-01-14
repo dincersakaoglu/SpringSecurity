@@ -1,0 +1,12 @@
+services:
+  db:
+    image: mysql
+    restart: always
+    container_name: springsecurity-db
+    environment:
+      MYSQL_ROOT_PASSWORD: dangercodex
+      MYSQL_DATABASE: springsecurity
+      MYSQL_USER: dangercodex
+      MYSQL_PASSWORD: dangercodex
+    ports:
+      - '3309:3306'

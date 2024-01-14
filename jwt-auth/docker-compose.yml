@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql
+    restart: always
+    container_name: dangercode-db
+    environment:
+      MYSQL_ROOT_PASSWORD: dangercoderoot
+      MYSQL_DATABASE: dangercode-db
+      MYSQL_USER: dangercode123
+      MYSQL_PASSWORD: dangercode123
+    ports:
+      - '3307:3306'
